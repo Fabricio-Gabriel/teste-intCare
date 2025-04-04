@@ -5,7 +5,7 @@ import shutil
 origem = "C:/Users/fabri/PycharmProjects/teste-intCare/web_scraping"
 destino = "C:/Users/fabri/anexos_teste"
 zip_nome = "anexos_teste.zip"
-pasta_externa = "C:/Users/fabri/"
+pasta_externa = "C:/Users/fabri/PycharmProjects/teste-intCare/Anexos/"
 
 os.makedirs(destino, exist_ok=True)
 
