@@ -39,8 +39,8 @@ csv_file = 'dados_extraidos.csv'
 df_valid.to_csv(csv_file, index=False, encoding='utf-8-sig')
 print(f"CSV salvo em: {os.path.abspath(csv_file)}")
 
-seu_nome = "fabricio_melquiades"
-zip_filename = f"Teste_{seu_nome}.zip"
+meu_nome = "fabricio_melquiades"
+zip_filename = f"Teste_{meu_nome}.zip"
 with zipfile.ZipFile(zip_filename, 'w', zipfile.ZIP_DEFLATED) as zipf:
     zipf.write(csv_file, arcname=os.path.basename(csv_file))
 print(f"Arquivo ZIP criado: {os.path.abspath(zip_filename)}")
